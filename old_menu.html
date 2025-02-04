@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Japan Sushi - Old Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a219593d5.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<!-- Верхний навбар -->
+<nav class="navbar navbar-expand-sm body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#main_images"><img height="100" src="../web_project_2.0/images/logo.png"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/index.html">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-up nav-link" data-bs-toggle="modal" data-bs-target="#recall_modal">Recall</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/info.html">Info</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navbar-up nav-link dropdown-toggle  active_b" data-bs-toggle="dropdown">
+            Add
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="navbar-up dropdown-item  active_b" href="../web_project_2.0/old_menu.html" target="_self">Old Menu</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Верхний навбар -->
+
+<!-- Нижний навбар -->
+<nav class="navbar navbar-expand-sm body-tertiary fixed-bottom">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse d-flex justify-content-between w-100">
+      <ul class="navbar-nav">
+        <li class=" navbar-down nav-item">
+          <p class="mb-0">email of developer:
+            <a href="mailto:il.gus2006@yandex.ru" target="_blank">il.gus2006@yandex.ru</a>
+          </p>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="navbar-down nav-item">
+          <p class="mb-0">tg of developer:
+            <a href="https://t.me/Maaaaaaaggic" target="_blank">Ilya_work</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Нижний навбар -->
+
+<!-- Recall -->
+<div class="modal fade" id="recall_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Recall</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form class="text-start" action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+          <input type="hidden" name="q" value="recall">
+
+          <div class="mb-3">
+            <label for="second_name" class="form-label">Surname</label>
+            <input type="text" class="form-control" name="second_name" id="second_name" value="Guskov">
+          </div>
+
+          <div class="mb-3">
+            <label for="first_name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="first_name" id="first_name" value="Ilya">
+          </div>
+
+          <div class="mb-3">
+            <label for="user_date_born" class="form-label">Date of birth</label>
+            <input type="date" class="form-control" name="user_date_born" id="user_date_born" value="2000-01-01">
+          </div>
+
+          <div class="mb-3">
+            <label for="set_of_recall" class="form-label">The set you ordered</label>
+            <select class="form-select" name="set_of_recall" id="set_of_recall">
+              <option value="samurai">Samurai</option>
+              <option value="shogun">Shogun</option>
+              <option value="peasant">Peasant</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone_number" class="form-label">Contact phone number</label>
+            <input type="tel" class="form-control" name="phone_number" id="phone_number" value="+79300000000">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Contact email</label>
+            <input type="email" class="form-control" name="email" id="email" value="e@gmail.com">
+          </div>
+
+          <div class="mb-3">
+            <label>Your rating</label>
+            <div>
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="2"> Badly
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="3"> Fine
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="4"> Good
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="5" checked> Great
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="user_date_send" class="form-label">Date the message was sent</label>
+            <input type="date" class="form-control" name="user_date_send" id="user_date_send" value="2025-02-02">
+          </div>
+
+          <div class="d-grid justify-content-center">
+            <button type="submit" class="btn btn-primary w-auto">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Recall -->
+
+<div class="container">
+    <table class="table mt-3 mb-3 table-bordered menu-table">
+        <thead>
+            <tr>
+                <th colspan="3" class="py-4">
+                    <h1 class="text-left" style="font-size: 24px;">Japan Sushi Restaurant Menu</h1>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="py-4">Samurai Set</td>
+                <td class="bg-dark text-center ">
+                    <a href="../web_project_2.0/" target="_blank">
+                        <img src="../web_project_2.0/images/set_samurai.jpg" width="300px" alt="Samurai Set">
+                    </a>
+                </td>
+                <td class="py-4">Price: 2400¥</td>
+            </tr>
+            <tr>
+                <td class="py-4 bg-anime" >Shogun Set</td>
+                <td class="bg-dark text-center">
+                    <a href="../web_project_2.0/set_segun.html" target="_blank">
+                        <img src="../web_project_2.0/images/set_segun.jpg" width="300px" alt="Shogun Set">
+                    </a>
+                </td>
+                <td class="py-4">Price: 3200¥</td>
+            </tr>
+            <tr>
+                <td class="py-4">Peasant Set</td>
+                <td class="bg-dark text-center">
+                    <a href="../web_project_2.0/set_krest.html" target="_blank">
+                        <img src="../web_project_2.0/images/set_krest.jpg" width="300px" alt="Peasant Set">
+                    </a>
+                </td>
+                <td class="py-4">Price: 1600¥</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bg-white">
+                    <p>phone: 8-930-***-*-***</p>
+                    <p>email: <a href="mailto:japan_sushi@yandex.ru">japan_sushi@yandex.ru</a></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

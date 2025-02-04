@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Japan Sushi - Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a219593d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Верхний навбар -->
+<nav class="navbar navbar-expand-sm body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#main_images"><img height="100" src="../web_project_2.0/images/logo.png"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/index.html">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-up nav-link" data-bs-toggle="modal" data-bs-target="#recall_modal">Recall</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-up nav-link active_b" href="../web_project_2.0/info.html">Info</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navbar-up nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Add
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="navbar-up dropdown-item" href="../web_project_2.0/old_menu.html" target="_self">Old Menu</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="navbar-up nav-link" href="../web_project_2.0/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Верхний навбар -->
+
+<!-- Нижний навбар -->
+<nav class="navbar navbar-expand-sm body-tertiary fixed-bottom">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse d-flex justify-content-between w-100">
+      <ul class="navbar-nav">
+        <li class=" navbar-down nav-item">
+          <p class="mb-0">email of developer:
+            <a href="mailto:il.gus2006@yandex.ru" target="_blank">il.gus2006@yandex.ru</a>
+          </p>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="navbar-down nav-item">
+          <p class="mb-0">tg of developer:
+            <a href="https://t.me/Maaaaaaaggic" target="_blank">Ilya_work</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Нижний навбар -->
+
+<!-- Recall -->
+<div class="modal fade" id="recall_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Recall</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form class="text-start" action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+          <input type="hidden" name="q" value="recall">
+
+          <div class="mb-3">
+            <label for="second_name" class="form-label">Surname</label>
+            <input type="text" class="form-control" name="second_name" id="second_name" value="Guskov">
+          </div>
+
+          <div class="mb-3">
+            <label for="first_name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="first_name" id="first_name" value="Ilya">
+          </div>
+
+          <div class="mb-3">
+            <label for="user_date_born" class="form-label">Date of birth</label>
+            <input type="date" class="form-control" name="user_date_born" id="user_date_born" value="2000-01-01">
+          </div>
+
+          <div class="mb-3">
+            <label for="set_of_recall" class="form-label">The set you ordered</label>
+            <select class="form-select" name="set_of_recall" id="set_of_recall">
+              <option value="samurai">Samurai</option>
+              <option value="shogun">Shogun</option>
+              <option value="peasant">Peasant</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone_number" class="form-label">Contact phone number</label>
+            <input type="tel" class="form-control" name="phone_number" id="phone_number" value="+79300000000">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Contact email</label>
+            <input type="email" class="form-control" name="email" id="email" value="e@gmail.com">
+          </div>
+
+          <div class="mb-3">
+            <label>Your rating</label>
+            <div>
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="2"> Badly
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="3"> Fine
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="4"> Good
+              <input class="form-check-input me-1" type="radio" name="recall_value" value="5" checked> Great
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="user_date_send" class="form-label">Date the message was sent</label>
+            <input type="date" class="form-control" name="user_date_send" id="user_date_send" value="2025-02-02">
+          </div>
+
+          <div class="d-grid justify-content-center">
+            <button type="submit" class="btn btn-primary w-auto">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Recall -->
+
+<section class="main-content">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <h2>GMO-Free Policy</h2>
+            <p>
+                At "Japan Sushi," we take great care in selecting high-quality, natural ingredients to ensure that every dish is safe and healthy for our guests.
+                We are committed to using non-GMO (Genetically Modified Organism) products, ensuring that our customers receive only the freshest and most natural ingredients.
+            </p>
+            <p>
+                Our menu features a variety of options made from non-GMO rice, vegetables, and seafood sourced from trusted suppliers.
+                You can rest assured that every meal at "Japan Sushi" reflects our dedication to quality and purity.
+            </p>
+
+            <h2>Health & Safety Standards</h2>
+            <p>
+                The health and safety of our guests and staff is our top priority. At "Japan Sushi," we adhere to the highest standards of hygiene and safety protocols to ensure a clean and safe environment for everyone.
+            </p>
+            <p>
+                Our restaurant undergoes regular health inspections, and we comply with all local health and safety regulations. We maintain rigorous cleanliness procedures in all areas, from food preparation to dining spaces.
+            </p>
+            <p>
+                We also ensure that our staff is well-trained in food safety practices and follows best practices for personal hygiene.
+            </p>
+
+            <h2>Taxpayer Identification Number (TIN)</h2>
+            <p>
+                Our restaurant, "Japan Sushi," operates transparently and complies with all tax regulations. Our TIN is 123-456-7890.
+                This ensures that all financial transactions are processed according to legal standards, and we maintain transparency in our operations.
+            </p>
+            <p>
+                If you require any further financial information or have any questions regarding our business activities, please feel free to contact us.
+            </p>
+
+            <h2>Environmental Responsibility</h2>
+            <p>
+                At "Japan Sushi," we are dedicated to reducing our environmental impact through sustainable practices.
+                We prioritize the use of eco-friendly packaging, minimize food waste, and source ingredients from local and environmentally conscious suppliers.
+            </p>
+            <p>
+                Our restaurant is committed to conserving energy and reducing water consumption, ensuring a more sustainable approach to our daily operations.
+            </p>
+            <p>
+                By choosing "Japan Sushi," you’re supporting a restaurant that values environmental responsibility and contributes to a greener future.
+            </p>
+
+            <h2>About "Japan Sushi"</h2>
+            <p>
+                "Japan Sushi" was founded with a passion for authentic Japanese cuisine and a commitment to providing guests with a unique dining experience.
+                Our mission is to blend traditional flavors with modern creativity, offering a menu that caters to both Japanese food enthusiasts and those looking to explore new tastes.
+            </p>
+            <p>
+                Located in the heart of Nizhny Novgorod, near the picturesque Volga embankment, we aim to be a go-to destination for those seeking high-quality Japanese cuisine.
+            </p>
+
+            <h2>Our Story</h2>
+            <p>
+                "Japan Sushi" was established with a vision to bring the authentic flavors of Japan to Nizhny Novgorod.
+                The idea was born from a deep passion for Japanese culinary traditions and a desire to create a restaurant that embodies the essence of Japanese culture.
+            </p>
+            <p>
+                From our carefully curated interior to our carefully sourced ingredients, we strive to offer an exceptional dining experience that reflects the rich heritage of Japanese cuisine.
+            </p>
+
+            <h2>Contact Information</h2>
+            <p>
+                address: 48 Bolshaya Pokrovskaya Street, Nizhny Novgorod, Russia
+            </p>
+            <p>phone: 8-930-***-*-***</p>
+            <p>email: <a href="mailto:japan_sushi@yandex.ru">japan_sushi@yandex.ru</a></p>
+
+            <a href="#main_images" target="_self">Return to Top</a>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

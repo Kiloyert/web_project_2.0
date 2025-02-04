@@ -1,0 +1,294 @@
+/*
+font-family: "Sawarabi Mincho", sans-serif;
+font-family: "East Sea Dokdo", sans-serif;
+color: #fdf1f3;
+color: #fcdde0;
+color: #F47983;
+color: #ee2b3b;
+*/
+
+
+/* Общий стиль */
+body {
+    background-color: #fdf1f3;
+}
+
+h1, h2, h3, h4 {
+    font-family: "East Sea Dokdo", sans-serif;
+}
+
+a, p {
+    font-family: "Sawarabi Mincho", sans-serif;
+    text-decoration: none;
+}
+
+
+/* Общий bootstrap */
+.nav-link {
+    color: #F47983;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #ee2b3b;
+}
+
+.active_b {
+    color: #ee2b3b !important;
+}
+
+/* Main content */
+.main-content h1{
+    font-size: 40px;
+}
+
+.main-content h2{
+    font-size: 30px;
+}
+
+.main-content h3{
+    font-size: 25px;
+}
+
+.main-content a{
+    color: #ee2b3b;
+}
+
+.main-content h1, .main-content h2 {
+    margin-left: 25px;
+}
+
+.main-content p, .main-content a {
+    margin-left: 5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fcdde0;
+}
+
+/* Navbar-up */
+.navbar-up{
+    font-family: "East Sea Dokdo", sans-serif;
+    font-size: 30px;
+}
+
+.fa-cart-shopping {
+    font-size: 20px;
+}
+
+/*#fcdde0;*/
+
+.navbar-toggler {
+    border: 1px solid #F47983;
+    color:#F47983;
+}
+
+/* Dropdown menu */
+.dropdown-menu{
+    background-color: #fdf1f3;
+    --bs-dropdown-border-color: rgba(238, 43, 59, .45);
+    --bs-dropdown-link-hover-bg: #fcdde0;
+    --bs-dropdown-link-hover-color: #ee2b3b;
+}
+
+.navbar-nav .nav-link.show {
+    color: #ee2b3b;
+}
+
+.dropdown-item {
+    color: #F47983;
+}
+
+/* Navbar-down*/
+.navbar-down{
+    font-family: "Sawarabi Mincho", sans-serif;
+}
+
+.navbar-down a{
+    color: #ee2b3b;
+}
+
+.navbar-down p{
+    color: #F47983;
+}
+
+/* Списки */
+ol[type="A"] {
+    font-family: "East Sea Dokdo", sans-serif;
+    font-size: 25px;
+}
+
+ol[type="1"] {
+    font-family: "Sawarabi Mincho", sans-serif;
+    font-size: 15px;
+}
+
+/* Модальное окно */
+
+.modal {
+    --bs-modal-header-border-color: #F47983;
+    --bs-modal-border-color: #F47983;
+}
+
+.modal-header .modal-title {
+    text-align: center;
+    width: 100%;
+    font-size: 40px !important;
+}
+
+.modal-content {
+    font-family: "Sawarabi Mincho", sans-serif;
+}
+
+.form-control:focus {
+    border-color: #ee2b3b;
+    box-shadow: 0 0 0 .25rem rgba(238, 43, 59, .45);
+}
+
+.form-select:focus {
+    border-color: #ee2b3b;
+    box-shadow: 0 0 0 .25rem rgba(238, 43, 59, .45);
+}
+
+.form-check-input:checked {
+    background-color: #ee2b3b;
+    border-color: #ee2b3b;
+}
+
+.form-check-input:focus {
+    border-color: #ee2b3b;
+    box-shadow: 0 0 0 .25rem rgba(238, 43, 59, .45);
+}
+
+.btn-primary{
+    --bs-btn-bg: #ee2b3b;
+    --bs-btn-border-color: #ee2b3b;
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:#F47983;
+    --bs-btn-hover-border-color: #fcdde0;
+
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #F47983;
+    --bs-btn-active-border-color: #fcdde0;
+}
+
+/* Таблица */
+table h1{
+    font-family: "East Sea Dokdo", sans-serif;
+    color: #ee2b3b;
+}
+
+table p{
+    font-family: "Sawarabi Mincho", sans-serif;
+    color: #F47983;
+}
+
+table a{
+    color:#ee2b3b;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 3px solid #fcdde0;
+    color: #F47983 !important;
+}
+
+
+/* Старое Меню */
+.menu-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Новое меню */
+.carousel-caption-custom {
+      position: absolute;
+      transform: translate(-50%, -50%);
+}
+
+.carousel {
+    margin-top: 80px; /* Отступ сверху */
+    margin-bottom: 80px; /* Отступ снизу */
+}
+
+.carousel-caption-custom h3 {
+      font-size: 3vw;
+      color: #fff;
+      margin: 0;
+
+}
+
+.carousel-caption-custom p {
+      font-size: 1.2vw;
+      color: #ddd;
+      margin: 0;
+}
+
+.menu_right{
+    text-align: right !important;
+}
+
+.menu_left{
+    text-align: left !important;
+}
+
+.highlighted {
+  cursor: default;
+}
+
+.highlighted h3{
+  color: #ee2b3b !important;
+}
+
+.highlighted p{
+  color: #F47983 !important;
+}
+
+/* Заказ */
+.discription-block {
+    width: 200px;
+    height: 150px;
+}
+
+.order-block{
+    width: 300px;
+    height: 550px;
+    border: 1px solid #F47983 !important;
+    border-radius: 12px;
+}
+
+.order-block input{
+    border-radius: 4px;
+    border: 1px solid #000 !important;
+}
+
+.cart-order input{
+    width:200px;
+}
+
+@media (min-width: 992px) {
+.col-lg-4 {
+    flex: 1 1 33.33%;
+    max-width: 300px;
+    margin: 10px;
+}
+}
+
+/*
+font-family: "Sawarabi Mincho", sans-serif;
+font-family: "East Sea Dokdo", sans-serif;
+color: #fdf1f3;
+color: #fcdde0;
+color: #F47983;
+color: #ee2b3b;
+*/
